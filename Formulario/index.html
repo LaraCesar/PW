@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin:20px;
+        }
+        form{
+            max-width: 400px;
+            margin: auto;
+            padding:20px;
+            border: 1px solid#ccc ;
+            border-radius: 5px;
+        }
+        input, select,textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid#ccc;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #28a745;
+            color: white;
+            padding: 10x;
+            border: none;
+            border-radius: 5px ;
+            cursor : pointer;
+        }
+        button:hover{
+            background-color:  #28a745;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulário de Cadastro</h2>
+    <form action="#" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"
+               name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"
+               name="email" required>
+        
+        <label for="senha">Senha:</label>       
+        <input type="passoword" id="senha"
+               name="senha" required>
+               
+        <label for="data-nascimento">Data de Nascimento:</label>       
+        <input type="date" id="data-nascimento"
+               name="data-nascimento" required>
+
+        <label for="genero">Gênero</label>      
+        <select is="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option valçue="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select> 
+
+        <div style="text-align:center;">
+        <label for="interesses">Interesses:</label>
+        <textarea id="interesses"
+          name="interesses" rows="4"
+          placeholder="Seus interesses...">
+        </textarea>
+
+        <input sat type="checkbox"
+          name="aceito" required>Aceito os termos e condiçóes
+        <br>
+        <br>
+        <button type="submit"> Cadastrar</button>
+        </div>
+    </form>
+</body>
+</html>

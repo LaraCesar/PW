@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos da Estrutura</title>
+
+    <style>
+        *{ margin : 0; padding : 0;}
+        #container{
+                margin:0px auto 0px auto;
+                width:960px;
+                background: hsl(320, 56%, 49%);
+        }
+        #cabeçalho{
+                margin:0px auto 0px auto;
+                width:960px;
+                height:82px;
+                position:relative;
+                background:#3c57b3;
+        }
+        #corpo{
+            margin:1px;
+            padding-top:10px;
+            padding-bottom:20px;
+            min-height:500px;
+        }
+        #menu{
+            margin:0px auto 0px auto;
+            width:160px;
+            height:500px;
+            float:left;
+            background:#74b2e4;
+        }
+        #artigo{
+            margin:0px auto 0px auto;
+            width:618px;
+            height:500px;
+            float:left;
+            background:#625ad6;
+            margin-left:10px
+        }
+        .cabeçalho_artigo{
+                    margin:0px auto 0px auto;
+                    width:598px;
+                    height:50px;
+                    float:left;
+                    background:#c0c0c0;
+                    margin:10px;
+        }
+        .artigo{
+            margin:0px auto 0px auto;
+            width:598px;
+            height:330px;
+            float:left;
+            background:#2dbb6d;
+            margin:10px;
+        }
+        .rodape_artigo{
+            margin:0px auto 0px auto;
+            width:598px;
+            height:50px;
+            float:left;
+            background:#1d06eb;
+            margin:10px;
+        }
+        #propaganda{
+            margin:0px auto 0px auto;
+            width:160px;
+            height:500px;
+            float: left;
+            background:#c0c000;
+            margin-left:10px;
+        }
+        #rodape{
+            margin:0px auto;
+            padding-bottom:20px;
+            width:960px;
+            position:relative;
+            background:#c0c000;
+            
+        }
+    </style>
+</head>
+    <body>
+        <div id="container">
+            <header id="cabeçalho">Header</header>
+                <div id="corpo">
+                        <nav id="menu">nav</nav>
+                        <section id="artigo">
+                            <header class="cabeçalho _artigo">header
+                            </header>
+                            <article class="artigo">
+                                article
+                            </article>
+                            <footer class="rodape_artigo">
+                                footer
+                            </footer>
+                        </section>
+                        <aside id="propaganda">
+                            aside
+                        </aside>
+               </div>  
+            <footer id="rodape" >
+                footer</footer> 
+        </div>   
+    </body>
+</html>

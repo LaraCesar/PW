@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia</title>
+
+<style>
+    * { margin: 0; padding : 0; }
+        .div1 {
+                float: left;
+                width: 160px;
+                height: 200px;
+                background-color: #ac3434;
+        }
+        .div2{
+                float: right;
+                width: 800px;
+                height: 200px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #49246d;
+        }
+        #container {
+                margin: 0px auto 0px auto;
+                width: 960px;
+                background: #1a1de2;
+        }
+        #cabecalho {
+                margin: 0px auto 0px auto;
+                width: 960px;
+                height: 82px;
+                position:relative;
+                background: #c9a609;
+        }
+        #corpo {
+            margin: 1px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            min-height: 500px;
+        }
+        #menu {
+                margin: 0px auto 0px auto;
+                width:160px;
+                height:500px;
+                float: left;
+                background: #7272b9;
+        }
+        #artigo {
+                margin: 0px auto 0px auto;
+                width: 618px;
+                height: 500px;
+                float: left;
+                background: #c0c088;
+                margin-left: 10px
+        }
+        .cabecalho_artigo{
+                margin: 0px auto 0px auto;
+                width: 598px;
+                height: 50px;
+                float:left;
+                background: #c0c0c0;
+                margin:10px
+        }
+        .artigo {
+                margin: 0px auto 0px auto;
+                width: 598px;
+                height: 330px;
+                float:left;
+                background: #80bbff;
+                margin: 10px
+        }
+        .rodape_artigo {
+                margin:opx auto 0px auto;
+                width: 598px;
+                height:50px;
+                float: left;
+                background: #0099f1;
+                margin:10px
+        }
+        #propaganda {
+                margin: 0px auto 0px auto;
+                width: 160px;
+                height:500px;
+                float: left;
+                background: #c0c000;
+                margin-left: 10px
+        }
+        #rodape {
+                margin: 0px auto 0px auto;
+                padding-bottom: 20px;
+                width: 960px;
+                position: relative;
+                background: #c9a609;
+        }
+        .img_cabeçalho{
+           width:160px;
+           height:200px; 
+        }
+        .img_artigo{
+           width:300px;
+           height: 300px;  
+           margin-left: auto;
+           margin-right: auto;
+           display:block;   
+        }
+</style>
+</head>
+<body>
+    <div id="container">
+        <header id ="cabecalho">
+                <div class="div1">
+                        <img src="logotipo.jpg" alt="">
+
+                </div>
+                <div class="div2"><h3>ETEC PEDRO BADRAN</h3></div>
+        </header>
+        <div id="corpo">
+                <nav id="menu">MENU<br>
+                <a href="#texto1"> Noticia JavaScript </a> </br>
+                <a href="#texto2"> Noticia CSS </a> <br>
+                <a href="#texto3"> Noticia Python </a> <br>
+
+                
+                </nav>
+                
+                <section id="artigo">
+                        <header class="cabecalho_artigo">
+                                <h2>O Futuro da Programção</h2>
+                        </header>
+                        <article class="artigo">
+                                <div id="texto1">
+                                        <b>1. JavaScript</b> <br>
+                                        <img class="img_artigo" src="img_javascript.png">        
+                                        <p><p>JavaScript é uma linguagem de programação que permite a você<br> implementar itens complexos em páginas web</p></p><br>
+                                        <p><p> Toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo
+                                         que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.</p></p>
+                                         <br>
+                                         <br>
+
+                                </div>
+                                
+                                
+                                <div id="texto2">
+                                        <b>2. CSS</b> <br>
+                                        <img class="img_artigo" src="img_CSS.png"> <br>
+                                        <p> O CSS pode ser usado para estilizar um documento muito básico de texto — por
+                                                 exemplo, alterando a cor e tamanho dos títulos e links. Pode ser usado para criar layout — por exemplo,
+                                                 transformando uma simples coluna de texto em um layout com uma área de 
+                                                 conteúdo principal e um sidebar (barra lateral) para as informações relacionadas. 
+                                                 Pode até ser usado para efeitos tais como animação. Dê uma olhada nos links deste parágrafo,
+                                                  para ver <b>exemplos específ Sintaxe CSS</b>.<br>
+                                                CSS é uma linguagem baseada em regras. — Você define regras especificando grupos de estilo
+                                                 que devem ser aplicados para elementos particulares ou grupos de elementos na sua página web. Por exemplo,
+                                                  "Quero que o título principal, na minha página, seja mostrado como um texto grande e de cor vermelha.".</p> <br>
+
+                                </div>
+                                
+                                
+
+                                <div id="texto3">
+                                        <b>3. python</b> <br>
+                                        <img class="img_artigo" src="img_python"> <br>
+                                        <p>O Python é uma linguagem de programação amplamente usada em aplicações da Web 
+                                         desenvolvimento de software, ciência de dados e machine learning (ML).
+                                         Os desenvolvedores usam o Python porque é eficiente e fácil de aprender
+                                          e pode ser executada em muitas plataformas diferentes.
+
+                        <footer class="rodape_artigo">
+                            https://esr.rnp.br/desenvolvimento-de-sistemas/a-importancia-da-programacao-para-o-futuro-do-trabalho/
+                        </footer>
+                </section>
+                <aside id="propaganda">anside</aside>          
+        </div>
+        <footer id="rodape">Hérick Marques</footer>
+    </div>    
+</body>
+</html>
